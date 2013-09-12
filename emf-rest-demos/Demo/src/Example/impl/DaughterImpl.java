@@ -60,7 +60,7 @@ public class DaughterImpl extends MemberImpl implements Daughter
   public Family getFamily()
   {
     if (eContainerFeatureID() != ExamplePackage.DAUGHTER__FAMILY) return null;
-    return (Family)eContainer();
+    return (Family)eInternalContainer();
   }
 
   /**

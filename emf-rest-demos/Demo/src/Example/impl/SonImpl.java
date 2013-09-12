@@ -60,7 +60,7 @@ public class SonImpl extends MemberImpl implements Son
   public Family getFamily()
   {
     if (eContainerFeatureID() != ExamplePackage.SON__FAMILY) return null;
-    return (Family)eContainer();
+    return (Family)eInternalContainer();
   }
 
   /**

@@ -60,7 +60,7 @@ public class ParentImpl extends MemberImpl implements Parent
   public Family getFamily()
   {
     if (eContainerFeatureID() != ExamplePackage.PARENT__FAMILY) return null;
-    return (Family)eContainer();
+    return (Family)eInternalContainer();
   }
 
   /**

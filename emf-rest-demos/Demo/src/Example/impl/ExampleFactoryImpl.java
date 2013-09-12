@@ -30,7 +30,7 @@ public class ExampleFactoryImpl extends EFactoryImpl implements ExampleFactory
   {
     try
     {
-      ExampleFactory theExampleFactory = (ExampleFactory)EPackage.Registry.INSTANCE.getEFactory("http://emf-rest.com/Example"); 
+      ExampleFactory theExampleFactory = (ExampleFactory)EPackage.Registry.INSTANCE.getEFactory(ExamplePackage.eNS_URI);
       if (theExampleFactory != null)
       {
         return theExampleFactory;
